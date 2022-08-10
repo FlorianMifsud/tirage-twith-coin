@@ -3,11 +3,7 @@
 
 const {app, BrowserWindow, Menu} = require('electron');
 const log = require('electron-log');
-require('update-electron-app')({
-  repo: 'FlorianMifsud/test',
-  updateInterval: '1 hour',
-  logger: require('electron-log')
-})
+const {autoUpdater} = require("electron-updater");
 
 //-------------------------------------------------------------------
 // Logging
